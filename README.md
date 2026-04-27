@@ -66,6 +66,8 @@ SELECT
 FROM sales s
 JOIN products p ON s."PID" = p."PID"
 
+
+
 ## 📌 Key Takeaways
 
 - Business performance varies by region and category
