@@ -66,7 +66,7 @@ SELECT
 FROM sales s
 JOIN products p ON s."PID" = p."PID"
 
-
+---
 
 ## 📌 Key Takeaways
 
@@ -74,5 +74,7 @@ JOIN products p ON s."PID" = p."PID"
 - A small group of salespersons drives most revenue
 - Profitability differs significantly from revenue
 - Time-based analysis shows seasonal patterns
+
+
 GROUP BY p."Category"
 ORDER BY total_sales DESC;
