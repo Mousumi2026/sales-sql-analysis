@@ -1,88 +1,47 @@
 # 📊 Sales SQL Analysis Project
 
-## 1. Overview
-## 2. Dataset Description
-## 3. Tools Used
-## 4. SQL Techniques Used
-## 5. Business Questions
-## 6. Key Insights 
-## 7. Business Impact 
-## 8. Example
-## 9. Conclusion
+## 📌 Executive Summary
 
-## 🔍 Overview
-This project analyzes a sales dataset using SQL (PostgreSQL).  
-The goal is to extract meaningful business insights from raw transactional data.
+This project analyzes a sales dataset using SQL (PostgreSQL) to extract meaningful business insights related to revenue, product performance, regional trends, and profitability.
 
-We explore:
-- Sales performance across regions
-- Product category performance
-- Top-performing salespersons
-- Profitability analysis
-- Time-based trends
+The main goal is to convert raw transactional data into actionable insights that support data-driven business decisions.
 
 ---
 
-## 🧱 Dataset Description
+## 🧱 Dataset Overview
 
-The dataset contains 4 relational tables:
+The dataset consists of four relational tables:
 
-- **sales** → transaction data (amount, customers, boxes, date)
-- **products** → product details (category, name, cost per box)
+- **sales** → transaction data (amount, customers, boxes, sale date)
+- **products** → product details (category, product name, cost per box)
 - **people** → salesperson information (name, team, location)
-- **geo** → region and geography mapping
+- **geo** → geographical mapping (region, geo)
 
 ---
 
 ## ⚙️ Tools & Technologies
 
 - PostgreSQL
-
-
----
-
-## 📊 Key SQL Techniques Used
-
-- SELECT & Filtering
-- INNER & LEFT JOIN
-- GROUP BY Clause
-- Aggregate Function(sum, avg,count)
-- CASE WHEN Logic
+- SQL
+- JOINs (INNER & LEFT JOIN)
+- GROUP BY Aggregations
 - Window Functions (RANK, DENSE_RANK)
 - CTE (Common Table Expressions)
-- JOIN operations
-- Date functions (EXTRACT, DATE_TRUNC, TO_CHAR)
-- Profit calculations
+- CASE WHEN Logic
+- Date Functions (EXTRACT, DATE_TRUNC, TO_CHAR)
 
 ---
 
-## 📈 Business Questions Solved
+## 🧠 SQL Concepts Applied
 
-- Which region generates the highest revenue?
-- Who are the top-performing salespersons?
-- Which product categories perform best?
-- What is the monthly sales trend?
-- What is the profit margin per product?
+- Data filtering and aggregation
+- Multi-table joins
+- Ranking and window functions
+- Profit and margin calculations
+- Time-based trend analysis
+- Conditional logic using CASE WHEN
 
 ---
-
-## 📊 Key Insights
-
-- APAC region generates the highest revenue  
-- Top 20% salespersons contribute majority of total sales  
-- Product performance varies significantly across categories  
-- Some high-revenue products have lower profit margins  
-- Sales show clear monthly seasonal patterns
-
-## 🎯 Business Impact
-
-This analysis helps the business to:
-
-- Identify high-performing regions for expansion  
-- Recognize top-performing salespersons for incentives  
-- Optimize product portfolio based on profitability  
-- Improve marketing strategy based on category performance  
-- Forecast seasonal demand trends  
 
 ## 📊 Example Query
 
@@ -94,17 +53,3 @@ FROM sales s
 JOIN products p ON s."PID" = p."PID"
 GROUP BY p."Category"
 ORDER BY total_sales DESC;
-```
-
-## 🚀 Conclusion
-
-This project demonstrates strong SQL skills and the ability to extract meaningful business insights from raw data.
-
-
-
-
-
-
-
-
-
