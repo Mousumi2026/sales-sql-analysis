@@ -1,41 +1,26 @@
+# 📊 Key Business Insights
 
----
+## 🌍 Region Insights
+- APAC region generates highest sales
+- Europe has lower but stable revenue
 
-# 📄 insights.md (VERY IMPORTANT for analyst mindset)
+## 👨‍💼 Salesperson Insights
+- Top 20% salespersons generate majority revenue
+- Performance varies significantly across regions
 
-```markdown
-# 📊 Business Insights – Sales Analysis
+## 📦 Product Insights
+- Certain categories dominate total revenue
+- Some high sales products have lower profit margin
 
-## 🌍 1. Regional Performance
-- Certain regions generate significantly higher revenue compared to others.
-- Sales concentration is higher in top-performing regions.
+## 💰 Profit Insights
+- Profit margin varies significantly by product
+- High revenue ≠ high profit always
 
----
+## 📅 Time Insights
+- Sales show clear monthly variation
+- Some months show strong seasonal spikes
 
-## 👨‍💼 2. Salesperson Performance
-- A small group of salespersons contributes most of the total revenue.
-- Performance varies significantly across regions.
-
----
-
-## 📦 3. Product Category Insights
-- Some product categories consistently outperform others.
-- High revenue is concentrated in specific categories.
-
----
-
-## 💰 4. Profitability Analysis
-- Profit margins vary significantly across products.
-- Some high-revenue products do not always generate high profit.
-
----
-
-## 📅 5. Time-Based Trends
-- Sales show clear monthly variation.
-- Certain periods show higher demand and revenue spikes.
-
----
-
+  
 ## 🎯 Final Recommendation
 - Focus marketing on high-performing regions
 - Optimize low-profit products
