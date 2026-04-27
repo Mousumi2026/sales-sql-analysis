@@ -65,5 +65,12 @@ SELECT
     SUM(s."Amount") AS total_sales
 FROM sales s
 JOIN products p ON s."PID" = p."PID"
+
+## 📌 Key Takeaways
+
+- Business performance varies by region and category
+- A small group of salespersons drives most revenue
+- Profitability differs significantly from revenue
+- Time-based analysis shows seasonal patterns
 GROUP BY p."Category"
 ORDER BY total_sales DESC;
