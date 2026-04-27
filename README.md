@@ -1,7 +1,9 @@
 📊 Sales Data Analysis Project (POSTGRESQL)
 
-🔍 Overview
+</> Markdown
+##🔍 Overview
 This project analyzes a sales dataset using SQL (PostgreSQL).
+
 It explores sales performance across products, regions, and salespersons to extract meaningful business insights.
 
 🧱 Dataset Structure
@@ -9,8 +11,11 @@ It explores sales performance across products, regions, and salespersons to extr
 The dataset contains 4 main tables:
 
 sales → transaction details (amount, customers, boxes, date)
+
 products → product information (name, category, cost per box)
+
 people → salesperson details (name, team, location)
+
 geo → geographical mapping (region, geo)
 
 ⚙️ Tools & Technologies
