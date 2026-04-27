@@ -68,20 +68,17 @@ The dataset contains 4 main tables:
   ✔️ Profit margin varies significantly by product
 
 ## 📊 Example Query
-</>  Sql
 
-SELECT 
+## 📊 Category-wise Sales
 
+```sql
+
+SELECT
     p."Category",
-    
     SUM(s."Amount") AS total_sales
-    
 FROM sales AS s
-
 JOIN products p ON s."PID" = p."PID"
-
 GROUP BY p."Category"
-
 ORDER BY total_sales DESC;
 
 
