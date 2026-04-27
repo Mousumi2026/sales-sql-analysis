@@ -86,9 +86,13 @@ Sales show clear seasonal and monthly variations
 This analysis provides actionable insights to support business decisions:
 
 -- Identify high-performing regions for expansion strategies
+
 -- Optimize product portfolio based on revenue and profitability
+
 -- Improve sales performance through targeted incentives
+
 -- Enhance inventory planning based on seasonal trends
+
 -- Support data-driven marketing decisions
 
 ## 🚀 Conclusion
