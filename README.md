@@ -82,7 +82,7 @@ JOIN products p ON s."PID" = p."PID"
 GROUP BY p."Category"
 
 ORDER BY total_sales DESC;
-</>
+
 
 ## 🚀 Outcome
 
