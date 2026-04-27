@@ -67,12 +67,14 @@ FROM sales s
 JOIN products p ON s."PID" = p."PID"
 GROUP BY p."Category"
 ORDER BY total_sales DESC;
+'''
 
-📌 Key Takeaways
-This query shows total sales by product category
-Helps identify best performing categories
-Useful for product strategy and marketing decisions
-High revenue categories can be prioritized
+## 📊 Key Takeaways
+
+- Business performance varies by region and category  
+- A small group of salespersons drives most revenue  
+- Profitability differs significantly from revenue  
+- Time-based analysis shows seasonal patterns  
 
 
 
