@@ -1,95 +1,69 @@
-## 📊 Sales Data Analysis Project (POSTGRESQL)
-
+# 📊 Sales SQL Analysis Project
 
 ## 🔍 Overview
+This project analyzes a sales dataset using SQL (PostgreSQL).  
+The goal is to extract meaningful business insights from raw transactional data.
 
-This project analyzes a sales dataset using SQL (PostgreSQL).
+We explore:
+- Sales performance across regions
+- Product category performance
+- Top-performing salespersons
+- Profitability analysis
+- Time-based trends
 
-It explores sales performance across products, regions, and salespersons to extract meaningful business insights.
+---
 
-## 🧱 Dataset Structure
+## 🧱 Dataset Description
 
-The dataset contains 4 main tables:
+The dataset contains 4 relational tables:
 
-** sales → transaction details (amount, customers, boxes, date)
+- **sales** → transaction data (amount, customers, boxes, date)
+- **products** → product details (category, name, cost per box)
+- **people** → salesperson information (name, team, location)
+- **geo** → region and geography mapping
 
-** products → product information (name, category, cost per box)
-
-** people → salesperson details (name, team, location)
-
-** geo → geographical mapping (region, geo)
+---
 
 ## ⚙️ Tools & Technologies
 
-  - PostgreSQL
-    
-  - SQL (JOIN, GROUP BY, CTE, Window Functions)
-    
-  - Data Analysis Concepts
+- PostgreSQL
+- SQL
+- Window Functions
+- CTE (Common Table Expressions)
+- JOIN operations
+- Aggregation functions
 
-## 📈 Key Business Questions Solved
+---
 
-✔️ Which salesperson generated the highest sales?
+## 📊 Key SQL Techniques Used
 
-✔️ Which product categories perform best?
+- SELECT & Filtering
+- INNER & LEFT JOIN
+- GROUP BY Aggregations
+- CASE WHEN Logic
+- Window Functions (RANK, DENSE_RANK)
+- Date functions (EXTRACT, DATE_TRUNC, TO_CHAR)
+- Profit calculations
 
-✔️ Which region has the highest revenue?
+---
 
-✔️ What is the monthly sales trend?
+## 📈 Business Questions Solved
 
-✔️ Who are the top performers per region?
+- Which region generates the highest revenue?
+- Who are the top-performing salespersons?
+- Which product categories perform best?
+- What is the monthly sales trend?
+- What is the profit margin per product?
 
-✔️ What is the profit margin by product?
-
-## 🧠 SQL Techniques Used
-    --  SELECT & Filtering
-    
-    --  JOIN (LEFT JOIN)
-    
-    --  GROUP BY Aggregations
-    
-    --  CASE WHEN Logic
-    
-    --  Common Table Expressions (CTE)
-    
-    --  Window Functions (RANK)
-    
-    --  Date Functions (DATE_TRUNC, EXTRACT, TO_CHAR)
-
-## 🏆 Key Insights
-  ✔️ Certain regions generate significantly higher revenue than others
-  
-  ✔️ A small number of salespersons contribute most of the sales
-  
-  ✔️ Product categories show clear performance differences
-  
-  ✔️ Sales show monthly trends and seasonality
-  
-  ✔️ Profit margin varies significantly by product
+---
 
 ## 📊 Example Query
 
-## 📊 Category-wise Sales
-
 ```sql
-
-SELECT
+SELECT 
     p."Category",
     SUM(s."Amount") AS total_sales
-FROM sales AS s
+FROM sales s
 JOIN products p ON s."PID" = p."PID"
 GROUP BY p."Category"
 ORDER BY total_sales DESC;
-
-
-## 🚀 Outcome
-
-This project demonstrates my ability to:
-
-✔️ Analyze real-world business data
-
-✔️ Write advanced SQL queries
-
-✔️ Extract actionable insights
-
-✔️ Work with relational databases
