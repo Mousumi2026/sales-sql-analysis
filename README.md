@@ -68,7 +68,8 @@ The dataset contains 4 main tables:
   ✔️ Profit margin varies significantly by product
 
 ## 📊 Example Query
-</>  Markdown
+</>  Sql
+
 SELECT 
 
     p."Category",
